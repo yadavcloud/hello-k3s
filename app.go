@@ -8,7 +8,7 @@ import (
 
 func hostnameHandler(w http.ResponseWriter, r *http.Request) {
     myhostname, _ := os.Hostname()
-    fmt.Fprintln(w, "Hello world! I'm running on:", myhostname)
+    fmt.Fprintln(w, "Namaste World! I'm running on pod:", myhostname)
 }
 
 func main() {
